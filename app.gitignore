@@ -16,6 +16,11 @@ build/
 
 # Ignore all node_modules
 node_modules/
-client/node_modules/
+frontend/node_modules/
 server/node_modules/
 backend/node_modules/
+
+
+# Vite/React build files
+dist/
+build/
