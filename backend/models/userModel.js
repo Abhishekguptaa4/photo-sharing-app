@@ -19,6 +19,20 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  photos: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Photo",
+    }
+  ],
+
+  
+  albums: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Album",
+    }
+  ],
 }, { timestamps: true });
 
 const User = mongoose.model("User", UserSchema);
